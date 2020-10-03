@@ -1,0 +1,158 @@
+
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    background-color:#7209b7;
+  }
+  
+  #navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: #f72585;
+    display: flex;
+    justify-content:flex-end;
+    z-index:999999;
+  }
+  
+  #navbar a{
+    color: white;
+    text-decoration: none;
+    margin:15px;
+    font-size:20px;
+  }
+  
+  #welcome-section{
+    height:100vh; 
+    background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60);
+    background-repeat:no-repeat;
+    background-size: cover; 
+    position:relative;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    margin-top:0;
+  }
+  #welcome-section::after{
+    content:"";
+    background-color:black;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0.5;
+  }
+  
+  #welcome-section *{
+    position:relative;
+    z-index: 1;
+  }
+  
+  #welcome-section h1{
+    font-size:60px;
+  }
+  
+  #welcome-section p{
+    font-size:25px;
+  }
+  
+  #projects{
+    height:700px;
+    text-align:center;
+    background-color:pink;
+    padding: 72px 0;
+  }
+  #projects h2{
+    font-size:40px;
+    color:#f72585;
+    font-weight:lighter;
+    font-family: 'Piazzolla', serif;
+    margin-bottom: 40px;
+  }
+  .row{
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    margin-bottom:30px;
+  }
+  .column{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+  }
+  .column a{
+    text-decoration:none;
+    color:black;
+    font-size:25px;
+  }
+  
+  iframe{
+      margin:0 auto;
+  }
+  /*********************************social section***********/
+  #social{
+    display:flex;
+    flex-direction:column;
+    padding: 72px 0;
+  }
+  #footer-text{
+    margin-bottom:30px;
+    font-size:25px;
+  }
+  #footer-text h2{
+    color:#f72585;
+    margin-bottom:0;
+    text-align:center;
+  }
+  #footer-text p{
+    font-size:20px;
+    margin-top:0;
+    text-align:center;
+  }
+  #footer-logos ul{
+    list-style-type:none;
+  }
+  #footer-logos li{
+    padding:5px;
+    
+  }
+  #footer-logos a{
+    text-decoration:none;
+    font-size:25px;
+    color:white;
+    display:block;
+    text-align:center;
+  }
+  #footer-logos a:hover{
+    color:#f72585;
+  }
+  /*******************footer***************/
+  .footer-fa .fa-heart{
+    color:red;
+  }
+  .footer-fa{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f72585;
+   color: white;
+   text-align: center;
+   padding-bottom: 15px;
+    padding-top:15px;
+  }
+  @media screen and (max-width:768px){
+    .row{
+        flex-direction: column;
+        gap: 30px;
+    }
+    #projects{
+        height: unset;
+    }
+  }
